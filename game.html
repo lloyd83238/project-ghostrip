@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/game-style.css">
+	<link rel="stylesheet" href="css/game-rwd.css">
+	<script type="text/javascript" src="t.js-master/t.min.js"></script>
+	<script src="js/jquery-3.5.1.js"></script>
+	<script src="t.js-master/t.js"></script>
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<a href="#" class="topbtn">
+		</a>
+
+		<!------------------top-bar------------------>
+
+		<header>
+			<input type="checkbox" name="" id="menu_control">
+			<header>
+				<ul class="sidebar">
+
+					<div class="logo">
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+					</div>
+					<label for="menu_control" class="burger">
+						<i class="fas fa-bars fa-1x"></i>
+					</label>
+					<div class="sidebar-menu">
+						<li><a href="map.html">熱門景點</a></li>
+						<li><a href="group.html">幻影旅團</a></li>
+						<li><a href="soup.html">海龜湯</a></li>
+						<li><a href="forum.html">討論區</a></li>
+						<li><a href=""><i class="far fa-user"></i></a></li>
+						<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+						<li><a href=""><i class="fab fa-instagram"></i></a></li>
+						<li><a href=""><i class="fab fa-youtube"></i></a></li>
+						<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					</div>
+				</ul>
+			</header>
+
+			<div class="search">
+
+				<h1>海龜湯</h1>
+				<a href="soup.html">返回</a>
+
+			</div>
+
+			<!-------------vk--------------->
+			<div class="vk">
+
+				<h1>牛吃草</h1>
+				<p>一 名男子在晚上睡覺時聽到門外傳來牛吃草及敲門的聲音，隔天早上發現有一名男子陳屍在門外</p>
+
+				<img src="img/milk.png" alt="">
+
+			</div>
+			<audio src="red.mp3" autoplay="true" loop="true" controls="volumelever"></audio>
+			<!-------------game--------------->
+			<div class="game">
+				<h1>點擊選項來獲得線索</h1>
+				<h2 class="clue">線索一:</h2>
+				<div class="game_btn">
+					<a href="">
+						<p>牛吃草不是<br>牛的聲音嗎?</p>
+					</a>
+					<a href="">
+						<p>現場有牛嗎?</p>
+					</a>
+					<a href="">
+						<p>是人吃人嗎?</p>
+					</a>
+				</div>
+				<div class="game_react">答案:</div>
+				<div class="indexbox">
+					<p>已走了<span class="userindex"> 0</span> 步(若沒有在10步內完成無法得到折扣碼)
+					</p>
+				</div>
+			</div>
+			<div id="jumpgame"></div>
+			<div class="ans">
+				<h1>湯底</h1>
+				<p class="ans_p"></p>
+			</div>
+
+			<div class="code">
+				<p>折扣碼:</p>
+				<output class="code_output">
+				</output>
+			</div>
+
+			<!--------------footer------------------>
+
+			<footer>
+				<p class="p1">Copyright © 2020 |鬼行旅Ghostrip|All right reserved </p>
+				<p class="p2">Privacy Policy</p>
+				<p class="p3">Terms of Service</p>
+			</footer>
+
+	</div>
+
+	<script src="js/game.js"></script>
+
+</body>
+
+</html>

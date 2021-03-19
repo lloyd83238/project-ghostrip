@@ -1,0 +1,282 @@
+@media screen and (max-width: 414px){
+    
+       
+    .wrapper{
+        padding-top: 60px;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .wrapper .topbtn{
+        margin-left: 380px;
+    }
+
+
+    header{
+       position: relative;
+    }
+
+    /* <--------------top-bar--------------> */
+
+    
+    .sidebar{ 
+        width: 100%;
+        height: 60px;
+        padding: 0px; 
+        box-shadow: none;
+        top: 0;
+    } 
+
+    .logo img{
+        
+        width: 50px;
+        padding: 0px;
+        float: left;
+        margin: 10px;
+        
+    }
+
+    .burger{
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+        display: block;
+
+    }
+
+
+    .sidebar-menu{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 100%;
+        transition: .5s;
+    }
+
+    
+    .sidebar-menu li{
+        
+        background-color:rgba(209, 208, 208, 0.8) ;
+        border-top:1px solid rgba(209, 208, 208, 0.8);
+        width: 414px;
+        height: 60px;
+    }
+
+    .sidebar-menu a{
+        position: relative;
+        top: 50%;
+        transform: translateY(-60%);
+        /* line-height: 60px; */
+       
+    }
+
+    #menu_control:checked ~ header .sidebar .sidebar-menu{
+        left: 0;
+        
+    }
+
+    .search{
+        width: 100%;
+        height: 270px;
+        background-size:cover;
+        padding-top: 60px;
+    }
+
+    .search h1{
+        
+        font-size: 50px;
+        
+    }
+    /* <-------------vk-top-------------> */
+    .vk{
+        width: 414px;
+        align-items: center;
+        
+    }
+
+    .vk-crumbs{
+        width: 300px;  
+        margin-bottom: 30px;
+    }     
+    
+
+    .vk-crumbs a{
+        margin-left: 5px;
+    }    
+
+    .vk-top{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 350px;    
+    }
+
+    .vk-top .p1{
+        margin-bottom: 10px;
+    }
+
+    .vk-top h1{
+        width: 300px;
+        margin: 0 auto;
+        font-size: 24px;
+        
+    }
+
+    .vk-top .p2{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .vk-top img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .vk-top .p3{
+        width: 300px;
+    }
+
+    .vk-top a{
+        width: 300px;
+        padding-right: 20px;
+        margin-bottom:40px;
+    }
+
+    .vk-top_btn{
+        width: 300px;
+        padding-bottom: 10px;
+        /* outline: 2px solid cadetblue; */
+        
+    }
+    
+    .vk-top_btn img{
+        width: 30px;
+        margin-bottom: -10px;
+    }
+
+    .vk-top_btn p{
+        top: 15px;
+        left: 40px;
+        font-size: 12px;
+        /* outline: 2px solid cadetblue;  */
+    }
+    
+    .vk-top_socialmedia a{
+        width: auto;
+        padding-right: 0;
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom:0;
+        /* outline: 2px solid cadetblue; */
+    }
+
+   
+
+    /* ----------------vk-down--------------------- */
+    .vk-down{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 350px;   
+     
+    }
+
+    .vk-down .p1{
+        margin-bottom: 10px;
+    }
+    
+    .vk-down h1{
+        width: 300px;
+        margin: 0 auto;
+        font-size: 24px;
+    }
+
+    .vk-down .p2{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    .vk-down img{
+        width: 300px;
+        margin-bottom: -10px;
+        
+    }
+    
+    .vk-down .p3{
+        width: 300px;
+    }
+    
+    .vk-down a{
+        width: 300px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .vk-down_btn{
+        width: 300px;
+        padding-bottom: 10px;
+        /* outline: 2px solid cadetblue; */
+        
+    }
+    
+    .vk-down_btn img{
+        width: 30px;
+    }
+
+    .vk-down_btn p{
+        top: 15px;
+        left: 40px;
+        font-size: 12px;
+        /* outline: 2px solid cadetblue;  */
+    }
+    
+    .vk-down_socialmedia a{
+        width: auto;
+        padding-right: 0;
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom:0;
+        /* outline: 2px solid cadetblue; */
+    }
+
+
+
+
+
+    /* ---------- footer ----------- */
+    footer{
+        display: flex;
+        width: 414px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer .p1{
+        display: block;
+        overflow: hidden;
+        width: 880px;
+        height: 20px;
+        font-size: 12px;
+        -webkit-transform : scale(0.5,0.5);
+        margin: 0;
+        
+        
+       
+    }
+
+    footer .p2{
+        display: block;
+        width: 450px;
+        font-size: 12px;
+        -webkit-transform : scale(0.5,0.5);
+        margin: 0;
+        
+    }
+
+    footer .p3{
+        display: block;
+        width: 450px;
+        font-size: 12px;
+        -webkit-transform : scale(0.5,0.5);
+        
+    }
+}

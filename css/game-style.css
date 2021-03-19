@@ -1,0 +1,556 @@
+@import url('reset.css');
+@font-face {
+  font-family:HanziPen TC;
+  src: url(HuaKangTiFan-CuTi.otf);
+  }
+
+*{
+    text-decoration: none;
+}
+
+body{
+    font-family: HanziPen TC;
+    line-height: 1.6;
+    
+
+}
+
+
+
+
+/* <-------------top-bar-------------> */
+
+
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.wrapper .topbtn{
+  display: block;
+  background-image: url(../img/topbtn.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  margin-left: 1130px;
+  
+  bottom: 30px;
+  z-index: 10;
+  
+}
+
+#menu_control{
+  position: absolute;
+  opacity: 0;
+}
+
+
+header{
+  width: auto;
+
+}
+
+
+.sidebar{
+  width: 70px;
+  height: auto;
+  padding: 15px;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1px 5px 10px 1px rgb(94, 93, 93);
+  
+  z-index: 10;
+  /* outline: 2px solid green; */
+}
+
+.burger{
+  display: none;
+}
+
+.logo img{
+  
+  width: 70px;
+  padding: 30px 0px 30px 0px;
+  
+  
+}
+
+
+
+.sidebar-menu li:nth-child(1) a{
+  color:black;
+  display: block;
+  height: 25px;
+  width: 66px;
+  margin: 0 auto;
+  font-family: Noto Sans;
+  font-weight: bold;
+      
+  margin-bottom:15px;
+  
+}
+
+.sidebar-menu li:nth-child(2) a{
+  color:black;
+  display: block;
+  height: 25px;
+  width: 66px;
+  margin: 0 auto;
+  font-family: Noto Sans;
+  font-weight: bold;
+  
+  margin-bottom:15px;
+  /* outline: 2px solid rebeccapurple; */
+}
+
+.sidebar-menu li:nth-child(3) a{
+  color:black;
+  display: block;
+  height: 25px;
+  width: 50px;
+  margin: 0 auto;
+  font-family: Noto Sans;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  
+  margin-bottom:15px;
+  /* outline: 2px solid rebeccapurple; */
+  
+}
+
+.sidebar-menu li:nth-child(4) a{
+  color:black;
+  display: block;
+  height: 25px;
+  width: 50px;
+  margin: 0 auto;
+  font-family: Noto Sans;
+  font-weight: bold;
+  
+  margin-bottom:25px;
+  
+}
+.sidebar-menu li:nth-child(5) a{
+  color:black;
+  display: block;
+  margin: 0 auto;
+  height: 25px;
+  width: 48px;
+  font-family: Noto Sans;
+  font-weight: bold;
+  margin-bottom:25px;
+  
+}
+
+.sidebar-menu .fa-user{
+  font-size: 25px;
+  color:rgb(0, 0, 0);
+}
+
+
+.sidebar-menu .fa-user:hover{
+  font-size: 25px;
+  color: cadetblue
+}
+
+
+.sidebar-menu li:nth-child(6) a{
+  color:black;
+  display: block;
+  margin: 0 auto;
+  height: 25px;
+  width: 48px;
+  font-family: Noto Sans;
+  font-weight: bold;
+  margin-bottom:25px;;
+
+}
+
+.sidebar-menu .fa-facebook-square{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-facebook-square:hover{
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.sidebar-menu li:nth-child(7) a{
+ 
+  color:black;
+  display: block;
+  margin: 0 auto;
+  height: 25px;
+  width: 48px;
+  font-family: Noto Sans;
+  font-weight: bold;
+  margin-bottom:25px;
+
+}
+
+.sidebar-menu .fa-instagram{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-instagram:hover{
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.sidebar-menu li:nth-child(8) a{
+
+  color:black;
+  display: block;
+  margin: 0 auto;
+  height: 25px;
+  width: 48px;
+  font-family: Noto Sans;
+  font-weight: bold;
+  margin-bottom:25px;
+
+}
+
+.sidebar-menu .fa-youtube{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-youtube:hover{
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.sidebar-menu li:nth-child(9) a{
+
+  color:black;
+  display: block;
+  margin: 0 auto;
+  height: 25px;
+  width: 48px;
+  font-family: Noto Sans;
+  font-weight: bold;
+  margin-bottom:25px;
+
+}
+
+
+
+.sidebar-menu .fa-twitter{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-twitter:hover{
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.sidebar-menu li:nth-child(1):hover a{
+  border-bottom: 2px solid cadetblue;
+  box-sizing: border-box;
+  color: cadetblue;
+}
+
+.sidebar-menu li:nth-child(2):hover a{
+  border-bottom: 2px solid cadetblue;
+  box-sizing: border-box;
+  color: cadetblue;
+}
+
+.sidebar-menu li:nth-child(3):hover a{
+  border-bottom: 2px solid cadetblue;
+  box-sizing: border-box;
+  color: cadetblue;
+  
+}
+
+.sidebar-menu li:nth-child(4):hover a{
+  border-bottom: 2px solid cadetblue;
+  box-sizing: border-box;
+  color: cadetblue;
+}
+
+
+
+
+.search{
+    background-image:url(../img/bigturtle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 1100px;
+    
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 300px; 
+    box-sizing: border-box;
+    /* outline: 2px solid green; */
+}
+
+.search h1{
+    font-size: 100px;
+    /* text-shadow:2px 2px 5px black; */
+    opacity: .75;
+}
+
+.search a {
+    display: block;
+    background-color: #3C3C3C;
+    width: 144px;
+    height: 48px;
+    font-family: Noto Sans;
+    font-size: 24px;
+    line-height: 48px;
+    margin:0 auto;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.search a:hover {
+    background-color: cadetblue;
+}
+
+
+
+
+
+::placeholder { /* CSS 3 標準 */
+
+    color: rgb(195, 195, 195);
+  
+  }
+  
+  ::-webkit-input-placeholder { /* Chrome, Safari */
+  
+    color: rgb(195, 195, 195);
+  
+  }
+  
+  :-ms-input-placeholder { /* IE 10+ */
+  
+    color: rgb(195, 195, 195);
+  
+  }
+  
+  ::-moz-placeholder { /* Firefox 19+ */
+  
+    color: rgb(195, 195, 195);
+  
+    opacity: 1;
+  
+  }
+
+  /* <-------------vk-------------> */
+
+.vk{
+    width: 1200px;
+    height: 800px;
+    /* outline: 2px solid red; */
+    text-align: center;
+    
+    position: relative;
+}
+
+.vk img{
+    
+}
+    
+
+.vk h1{
+    font-size: 56px;
+    margin-bottom: 50px;
+    color:rgb(70, 70, 70) ;
+    text-shadow:2px 2px 5px gray;
+
+}
+
+.vk p{
+    text-align:left;
+    width: 800px;
+    font-size: 24px;
+   
+    position: absolute;
+    top:180px;
+    left: 250px; 
+    
+}
+
+.disappear{
+  display: none;
+}
+
+/* -----------------music------------------- */
+audio{
+  float: right;
+  outline: 2px solid transparent;
+}
+
+
+/* ------------------game-------------------- */
+
+.game {
+    width: 1200px;
+    margin: 0 auto;
+    padding:50px 50px 100px 100px;
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+}
+
+
+
+.game h1{
+  width:1000px;
+    font-size: 50px;
+/* font-family: Noto Sans; */
+text-align: center;
+
+}
+
+.clue{
+  margin-left: 100px;
+  margin-top: 40px;
+  font-size: 25px;
+  color: maroon;
+}
+.game_btn{
+  margin-left: 60px;
+    display: flex;
+    /* position: relative; */
+    
+    
+}
+
+.game_btn a{
+    background-image: url(../img/5930c933c43ff.png);
+    display: block;
+    width: 260px;
+    height: 355px;
+    position: relative;
+    margin-right: 80px;
+  
+}
+
+.game_btn a:hover {
+  top:-20px
+}
+
+.game_btn p{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family: Noto Sans;
+    font-weight: bold;
+    top: 38%;
+    left: 23%;
+}
+
+
+
+
+.game_react{
+    background-color: white;
+    width: 150px;
+    font-size: 36px;
+    border-radius: 10px;
+    padding: 10px 0 5px 15px;   
+    margin-left: 420px;
+
+    /* outline: 2px solid red; */
+
+}
+
+.indexbox{
+  text-align: end;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.userindex{
+color: red;
+}
+/* ---------------湯底------------------ */
+.ans{
+    background-color: #83C5BE;
+    width: 1200px;
+    margin: 0 auto;
+    height: 400px;
+    padding: 100px;
+    box-sizing: border-box;
+
+}
+
+.ans h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    color:rgb(70, 70, 70) ;
+    text-shadow:2px 2px 5px gray;
+}
+
+.ans p{
+    font-size: 24px;
+    text-align: center;
+}
+/* ----------------折扣碼-------------------- */
+
+.code {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.code p{
+    display: block;
+    height:40px ;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 350px;
+    /* outline: 2px solid rebeccapurple; */
+}
+
+.code_output{
+    text-align: center;
+    margin: 20px;
+    font-size: 36px;
+    line-height: 40px;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    font-family: Noto Sans;
+    /* outline: 2px solid rebeccapurple; */
+    border:2px rgb(0, 0, 0) solid;border-radius:10px;width:350px;height:40px;
+}
+
+/* <!-----------footer---------------> */
+
+
+footer{
+  width: 1200px;
+  height: 60px;
+  background-color: #EBEBEB;
+  font-family: 華康細圓體;
+  font-size: 6px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .p1{
+  margin-left: 60px;
+  margin-right: 400px;
+}
+
+footer .p2{
+  margin-right: 50px;
+}
+

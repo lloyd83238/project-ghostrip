@@ -1,0 +1,554 @@
+@import url('reset.css');
+@font-face {
+  font-family:HanziPen TC;
+  src: url(HuaKangTiFan-CuTi.otf);
+  }
+
+*{
+    text-decoration: none;
+}
+
+body{
+    font-family: HanziPen TC;
+    line-height: 1.6;
+    
+
+}
+
+
+
+
+/* <-------------top-bar-------------> */
+.wrapper{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 60px;
+    background-color: #9BB9AD;
+    /* outline: 2px solid yellow; */
+    
+}
+
+.wrapper .topbtn{
+    display: block;
+    background-image: url(../img/topbtn.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    margin-left: 1130px; 
+    margin-top: 480px;
+    z-index: 10;
+}
+
+#menu_control{
+    position: absolute;
+    opacity: 0;
+  }
+  
+header{
+    width: auto;
+
+}
+
+
+.sidebar{
+    width: 70px;
+    height: 530px;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(255, 255, 255,.9);
+    box-shadow: 1px 5px 10px 1px rgb(94, 93, 93);
+    
+    z-index: 10;
+    /* outline: 2px solid green; */
+}
+
+.burger{
+    display: none;
+  }
+  
+  .logo img{
+    
+    width: 70px;
+    padding: 30px 0px 30px 0px;
+    
+    
+  }
+  
+  
+  
+  .sidebar-menu li:nth-child(1) a{
+    color:black;
+    display: block;
+    height: 25px;
+    width: 66px;
+    margin: 0 auto;
+    font-family: Noto Sans;
+    font-weight: bold;   
+        
+    margin-bottom:15px;
+    
+  }
+  
+  .sidebar-menu li:nth-child(2) a{
+    color:black;
+    display: block;
+    height: 25px;
+    width: 66px;
+    margin: 0 auto;
+    font-family: Noto Sans;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    box-sizing: border-box;
+    
+    margin-bottom:15px;
+    /* outline: 2px solid rebeccapurple; */
+  }
+  
+  .sidebar-menu li:nth-child(3) a{
+    color:black;
+    display: block;
+    height: 25px;
+    width: 50px;
+    margin: 0 auto;
+    font-family: Noto Sans;
+    font-weight: bold;
+    
+    margin-bottom:15px;
+    /* outline: 2px solid rebeccapurple; */
+    
+  }
+  
+  .sidebar-menu li:nth-child(4) a{
+    color:black;
+    display: block;
+    height: 25px;
+    width: 50px;
+    margin: 0 auto;
+    font-family: Noto Sans;
+    font-weight: bold;
+    
+    margin-bottom:25px;
+    
+  }
+  .sidebar-menu li:nth-child(5) a{
+    color:black;
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 48px;
+    font-family: Noto Sans;
+    font-weight: bold;
+    margin-bottom:25px;
+    
+  }
+  
+  .sidebar-menu .fa-user{
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+  }
+  
+  
+  .sidebar-menu .fa-user:hover{
+    font-size: 25px;
+    color: cadetblue
+  }
+  
+  
+  .sidebar-menu li:nth-child(6) a{
+    color:black;
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 48px;
+    font-family: Noto Sans;
+    font-weight: bold;
+    margin-bottom:25px;;
+  
+  }
+  
+  .sidebar-menu .fa-facebook-square{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .sidebar-menu .fa-facebook-square:hover{
+    font-size: 25px;
+    color: cadetblue;
+  }
+  
+  .sidebar-menu li:nth-child(7) a{
+   
+    color:black;
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 48px;
+    font-family: Noto Sans;
+    font-weight: bold;
+    margin-bottom:25px;
+  
+  }
+  
+  .sidebar-menu .fa-instagram{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .sidebar-menu .fa-instagram:hover{
+    font-size: 25px;
+    color: cadetblue;
+  }
+  
+  .sidebar-menu li:nth-child(8) a{
+  
+    color:black;
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 48px;
+    font-family: Noto Sans;
+    font-weight: bold;
+    margin-bottom:25px;
+  
+  }
+  
+  .sidebar-menu .fa-youtube{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .sidebar-menu .fa-youtube:hover{
+    font-size: 25px;
+    color: cadetblue;
+  }
+  
+  .sidebar-menu li:nth-child(9) a{
+  
+    color:black;
+    display: block;
+    margin: 0 auto;
+    height: 25px;
+    width: 48px;
+    font-family: Noto Sans;
+    font-weight: bold;
+    margin-bottom:25px;
+  
+  }
+  
+  
+  
+  .sidebar-menu .fa-twitter{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .sidebar-menu .fa-twitter:hover{
+    font-size: 25px;
+    color: cadetblue;
+  }
+  
+  .sidebar-menu li:nth-child(1):hover a{
+    border-bottom: 2px solid cadetblue;
+    box-sizing: border-box;
+    color: cadetblue;
+  }
+  
+  .sidebar-menu li:nth-child(2):hover a{
+    border-bottom: 2px solid cadetblue;
+    box-sizing: border-box;
+    color: cadetblue;
+  }
+  
+  .sidebar-menu li:nth-child(3):hover a{
+    border-bottom: 2px solid cadetblue;
+    box-sizing: border-box;
+    color: cadetblue;
+  }
+  
+  .sidebar-menu li:nth-child(4):hover a{
+    border-bottom: 2px solid cadetblue;
+    box-sizing: border-box;
+    color: cadetblue;
+  }
+
+/* <!-----------------旅團介紹------------------> */
+
+.main-grid{
+    background-color: white;
+    width: 900px;   
+    height: 500px; 
+    margin: 0 auto;    
+    margin-right: 65px;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start; */
+    display: grid;
+    grid-template-columns: 300px 100px 100px 400px;
+    grid-template-rows: 30px 100px 50px 50px 50px 80px 80px 40px;
+    
+    grid-template-areas:"co h h h  " 
+                        "ti ti ti ti"
+                        "img img sp loc"
+                        "img img sp psn"
+                        "img img sp tim"
+                        "img img sp itd"
+                        "img img sp ev"
+                        "img img sp btn"
+}
+
+.item-cookie{
+    grid-area: co;
+    color: black;
+
+}
+
+.item-cookie a{
+    font-family: Noto Sans;
+    color: black;
+}
+
+.home:hover{
+    color:chocolate ;    
+    /* border-bottom: 2px solid chocolate; */
+    
+}
+
+.group:hover{
+    color:chocolate ;    
+    /* border-bottom: 2px solid chocolate; */
+    
+}
+
+.itd:hover{
+    color:chocolate ;    
+    /* border-bottom: 2px solid chocolate; */
+    
+}
+
+
+.item-title{
+    grid-area: ti;
+    font-size: 40px;
+    margin: 0 auto;
+    color:rgb(70, 70, 70) ;
+    text-shadow:2px 2px 5px gray;
+    
+
+}
+
+.item-mainpic{
+    grid-area: img;
+
+}
+
+.item-location{
+    grid-area: loc;
+    font-size: 30px;
+
+}
+
+.item-person{
+    grid-area:psn;
+    font-size: 30px;
+
+}
+
+.item-time{
+    grid-area: tim;
+    font-size: 30px;
+
+}
+
+.item-content{
+    grid-area: itd;
+    font-size: 30px;
+
+}
+
+.item-evaluation{
+    display: flex;
+    grid-area: ev;
+    font-size: 30px;
+    
+
+}
+.item-evaluation img{
+    height: 40px;
+    margin-left: 10px;
+}
+
+.item-btn{
+    grid-area: btn;
+    font-size: 30px;
+    display: flex;
+    font-size: 24px;
+    font-family: 華康細圓體;
+    font-weight: bold;
+    
+}
+
+
+
+.item-btn .stone{
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin-right: 50px;   
+    color: rgb(255, 255, 255); 
+    background-color: rgb(212, 209, 209);
+    border-radius: 25px;
+    
+}
+
+.item-btn .stone:hover{
+    background-color: cadetblue;
+    /* color: white */
+  }
+
+
+
+.item-btn .join{
+    display: block;
+    width: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(212, 209, 209);
+    border-radius: 25px;
+   
+}
+
+.item-btn .join:hover{
+    background-color: cadetblue;
+    /* color: white */
+  }
+
+.main h1{
+    /* display: block;
+    text-align: center;
+    width: 600px;
+    font-size: 40px;
+    margin: 20px auto 40px auto;
+    outline: 2px solid yellow; */
+}
+
+.main img{
+    
+}
+
+.main p{
+    /* margin-top: 50px; */
+}
+
+/* <!------------------menu-down------------------> */
+
+.menu-down{
+    margin-top: 50px;
+    width: 1200px;
+    height: 250px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color:rgb(70, 70, 70) ;
+    text-shadow:2px 2px 5px gray;
+    position: relative;
+    /* height: 50px; */
+    /* outline: 2px solid red; */
+}
+
+.menu-down p{
+    font-size: 24px;
+    font-family: 華康細圓體;
+    margin-left: 50px;    
+
+}
+
+.menu-down_pic {
+    display: flex;
+    width: 230px;
+    padding: 50px;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+
+}
+
+.menu-down_pic li{
+    width: 200px;   
+    height: 166px; 
+    margin-right:10px;
+    transition: .5s;
+}
+
+.menu-down_pic img{
+    width: 200px;
+    
+}
+
+.menu-down_pic li:hover{
+    position:absolute;
+    top:70px ;   
+    transition: .5s;
+    box-shadow: 2px 5px 5px black;
+    
+    
+}
+
+.menu-down_pic .p1{
+    position: absolute;
+    left: 50px;
+    top: 80px;
+
+}
+
+.menu-down_pic .p2{
+    position: absolute;
+    left: 260px;
+    top: 80px;
+
+}
+
+.menu-down_pic .p3{
+    position: absolute;
+    left: 470px;
+    top: 80px;
+
+}
+
+.menu-down_pic .p4{
+    position: absolute;
+    left: 680px;
+    top: 80px;
+
+}
+
+.menu-down_pic .p5{
+    position: absolute;
+    left: 890px;
+    top: 80px;
+
+}
+
+/* <!-----------footer---------------> */
+
+footer{
+  width: 1200px;
+  height: 60px;
+  background-color: #EBEBEB;
+  font-family: 華康細圓體;
+  font-size: 6px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .p1{
+  margin-left: 150px;
+  margin-right: 400px;
+}
+
+footer .p2{
+  margin-right: 50px;
+}

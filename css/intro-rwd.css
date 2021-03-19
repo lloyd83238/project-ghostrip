@@ -1,0 +1,306 @@
+@media screen and (max-width: 414px){
+    
+       
+    .wrapper{
+        padding-top: 60px;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .wrapper .topbtn{
+        margin-left: 380px;
+    }
+
+
+    header{
+       position: relative;
+    }
+
+    /* <--------------top-bar--------------> */
+
+    
+    .sidebar{ 
+        width: 100%;
+        height: 60px;
+        padding: 0px; 
+        box-shadow: none;
+        position: fixed;
+        top: 0;
+        background-color: rgba(255, 255, 255, .95);
+      
+    } 
+
+   
+
+    .logo img{
+        
+        width: 50px;
+        padding: 0px;
+        float: left;
+        margin: 10px;
+        
+    }
+
+    .burger{
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+        display: block;
+
+    }
+
+    
+    .sidebar-menu{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 100%;
+        transition: .5s;
+    }
+
+    
+    .sidebar-menu li{
+        
+        background-color:rgba(255, 255, 255, 0.95) ;
+        border-top:1px solid rgba(209, 208, 208, 0.8);
+        width: 414px;
+        height: 60px;
+    }
+
+    .sidebar-menu a{
+        position: relative;
+        top: 50%;
+        transform: translateY(-60%);
+        /* line-height: 60px; */
+       
+    }
+
+    #menu_control:checked ~ header .sidebar .sidebar-menu{
+        left: 0;
+        
+    }
+
+    /* <!-----------------旅團介紹------------------> */
+
+    .main-grid{
+        width: 350px;
+        margin: 0 auto;
+        height: 620px;
+        margin-top: 30px;
+        padding: 0;
+        padding-top: 10px;
+       
+        grid-template-columns: 350px ;
+        grid-template-rows: 40px 70px 260px 35px 35px 35px 35px 35px 50px;
+    
+        grid-template-areas:"co  " 
+                        "ti  "
+                        "img "
+                        "loc"
+                        " psn"
+                        " tim"
+                        " itd"
+                        " ev"
+                        " btn";
+
+    }
+
+    .item-cookie{
+        text-align: start;
+        font-size: 12px;
+        margin-left: 28px;
+    }
+
+    .item-title{
+        font-size: 30px;
+        
+
+    }
+    .item-mainpic{
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    
+    }
+
+    
+.item-location{
+    grid-area: loc;
+    font-size: 20px;
+    margin: 0 auto;
+
+}
+
+.item-person{
+    grid-area:psn;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.item-time{
+    grid-area: tim;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.item-content{
+    grid-area: itd;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.item-evaluation{
+    display: flex;
+    grid-area: ev;
+    font-size: 20px;
+    margin: 0 auto;
+
+}
+
+.item-evaluation img{
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.item-btn{
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.item-btn .stone{
+    height: 25px;
+    width: 80px;
+}
+
+.item-btn .join{
+    height: 25px;
+    width: 80px;
+}
+    
+
+/* <!------------------menu-down------------------> */
+
+
+
+.menu-down{
+    width: 400px;
+    height: 150px;
+    margin-left: 0;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+}
+    
+
+.menu-down p{
+  margin-left: 0px;
+    font-size: 18px;
+}
+
+.menu-down_pic {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.menu-down_pic li{
+    width: 80px;
+    height: 66px;
+}
+
+
+.menu-down_pic img{
+    width: 80px;
+    height: auto;
+    
+}
+
+.menu-down_pic li:hover{
+    position:absolute;
+    top:70px ;   
+    transition: .5s;
+    box-shadow: 2px 5px 5px black;
+    
+    
+}
+
+.menu-down_pic .p1{
+    position: absolute;
+    left: 0px;
+    top: 80px;
+
+}
+
+.menu-down_pic .p2{
+    position: absolute;
+    left: 80px;
+    top: 80px;
+
+}
+
+.menu-down_pic .p3{
+    position: absolute;
+    left: 160px;
+    top: 80px;
+
+}
+
+.menu-down_pic .p4{
+    position: absolute;
+    left: 240px;
+    top: 80px;
+
+}
+
+.menu-down_pic .p5{
+    position: absolute;
+    left: 320px;
+    top: 80px;
+
+}
+
+
+/* <!-----------footer---------------> */
+footer{
+    display: flex;
+    width: auto;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+footer .p1{
+    display: block;
+    overflow: hidden;
+    width: 880px;
+    height: 20px;
+    font-size: 12px;
+    -webkit-transform : scale(0.5,0.5);
+    margin: 0;
+    
+    
+   
+}
+
+footer .p2{
+    display: block;
+    width: 450px;
+    font-size: 12px;
+    -webkit-transform : scale(0.5,0.5);
+    margin: 0;
+    
+}
+
+footer .p3{
+    display: block;
+    width: 450px;
+    font-size: 12px;
+    -webkit-transform : scale(0.5,0.5);
+    
+}
+
+}

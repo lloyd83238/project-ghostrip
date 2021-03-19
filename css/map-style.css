@@ -1,0 +1,452 @@
+@import url("reset.css");
+/* @import url(/Build/Cesium/Widgets/widgets.css); */
+@font-face {
+  font-family: HanziPen TC;
+  src: url(HuaKangTiFan-CuTi.otf);
+}
+
+* {
+  text-decoration: none;
+}
+
+body {
+  font-family: HanziPen TC;
+  line-height: 1.6;
+}
+
+/* <-------------top-bar-------------> */
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper .topbtn {
+  display: block;
+  background-image: url(../img/topbtn.png);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  margin-left: 1130px;
+
+  bottom: 30px;
+  z-index: 10;
+}
+
+#menu_control {
+  position: absolute;
+  opacity: 0;
+}
+
+header {
+  width: auto;
+}
+
+.sidebar {
+  width: 70px;
+  height: auto;
+  padding: 15px;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(209, 208, 208, 0.8);
+  box-shadow: 1px 5px 10px 1px rgb(94, 93, 93);
+
+  z-index: 10;
+  /* outline: 2px solid green; */
+}
+
+.burger {
+  display: none;
+}
+
+.logo img {
+  width: 70px;
+  padding: 30px 0px 30px 0px;
+}
+
+.sidebar-menu li a {
+  color: black;
+  display: block;
+  height: auto;
+  width: 66px;
+  margin: 0 auto;
+  font-family: Noto Sans;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  margin-bottom: 15px;
+}
+
+.sidebar-menu li:nth-child(3) a {
+  width: 50px;
+}
+
+.sidebar-menu li:nth-child(4) a {
+  width: 50px;
+}
+
+.sidebar-menu li:hover a {
+  border-bottom: 2px solid cadetblue;
+  box-sizing: border-box;
+  color: cadetblue;
+}
+
+.sidebar-menu li:nth-child(5):hover a {
+  border-bottom: 2px solid transparent;
+}
+
+.sidebar-menu li:nth-child(6):hover a {
+  border-bottom: 2px solid transparent;
+}
+
+.sidebar-menu li:nth-child(7):hover a {
+  border-bottom: 2px solid transparent;
+}
+
+.sidebar-menu li:nth-child(8):hover a {
+  border-bottom: 2px solid transparent;
+}
+
+.sidebar-menu li:nth-child(9):hover a {
+  border-bottom: 2px solid transparent;
+}
+
+.sidebar-menu .fa-user {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-user:hover {
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.sidebar-menu .fa-facebook-square {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-facebook-square:hover {
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.sidebar-menu .fa-instagram {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-instagram:hover {
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.sidebar-menu .fa-youtube {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-youtube:hover {
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.sidebar-menu .fa-twitter {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+.sidebar-menu .fa-twitter:hover {
+  font-size: 25px;
+  color: cadetblue;
+}
+
+.search {
+  background-image: url(../img/home.png);
+  width: 1200px;
+  height: 770px;
+
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 300px;
+  box-sizing: border-box;
+  /* outline: 2px solid green; */
+}
+
+.search h1 {
+  font-size: 100px;
+  /* text-shadow:2px 2px 5px black; */
+  opacity: 0.75;
+}
+
+.search_input {
+  background-image: url(../img/search.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: right;
+  position: relative;
+  border: transparent;
+  font-size: 20px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+}
+
+::placeholder {
+  /* CSS 3 標準 */
+
+  color: rgb(195, 195, 195);
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Safari */
+
+  color: rgb(195, 195, 195);
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+
+  color: rgb(195, 195, 195);
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+
+  color: rgb(195, 195, 195);
+
+  opacity: 1;
+}
+
+/* <!--------------地圖導覽-------------> */
+
+.map h1 {
+  text-align: center;
+  color: rgb(70, 70, 70);
+  text-shadow: 2px 2px 5px gray;
+  font-size: 50px;
+  margin-top: 50px;
+  /* margin-bottom: 30px; */
+}
+
+.map iframe {
+  display: block;
+  margin: 0 auto;
+  border: white;
+}
+
+.earth iframe {
+  display: block;
+  height: 500px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#cesiumContainer {
+  height: 600px;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* <!--------------恐怖指數-------------> */
+
+.intro {
+  background-color: white;
+  width: 1200px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 40px;
+  margin: 0 auto;
+  align-items: flex-start;
+  padding: 50px 100px 50px 200px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.intro-terrilevel {
+  display: flex;
+  height: 30px;
+}
+
+.intro-terrilevel p {
+  font-size: 30px;
+  color: rgb(151, 9, 9);
+}
+
+.intro-terrilevel img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+.intro-pic {
+  position: relative;
+}
+
+.intro-pic .p_hos {
+  background-color: chocolate;
+  display: block;
+  width: 80px;
+  height: 40px;
+  font-size: 28px;
+  font-family: 華康細圓體;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  transform: rotate(320deg);
+  position: absolute;
+  left: -20px;
+  top: 30px;
+}
+.intro-pic .p_mov {
+  background-color: cadetblue;
+  display: block;
+  width: 80px;
+  height: 40px;
+  font-size: 28px;
+  font-family: 華康細圓體;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  transform: rotate(320deg);
+  position: absolute;
+  left: -20px;
+  top: 30px;
+}
+.intro-pic .p_shop {
+  background-color: maroon;
+  display: block;
+  width: 80px;
+  height: 40px;
+  font-size: 28px;
+  font-family: 華康細圓體;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  transform: rotate(320deg);
+  position: absolute;
+  left: -20px;
+  top: 30px;
+}
+
+.intro-pic p {
+  background-color: rgb(158, 6, 158);
+  display: block;
+  width: 80px;
+  height: 40px;
+  font-size: 28px;
+  font-family: 華康細圓體;
+  line-height: 40px;
+  color: white;
+  text-align: center;
+  transform: rotate(320deg);
+  position: absolute;
+  left: -20px;
+  top: 30px;
+}
+
+.intro-pic img {
+  margin-top: 40px;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;     */
+  width: 500px;
+  font-size: 24px;
+  margin-left: 100px;
+  /* outline: 2px solid green; */
+}
+
+.intro-text p {
+  line-height: 2;
+  position: relative;
+}
+.intro-text_btn {
+  margin-top: 10px;
+  display: flex;
+}
+
+.intro-text a {
+  display: block;
+  width: 100px;
+  border-radius: 25px;
+  text-align: center;
+  /* position: absolute;
+        right: 100px;
+        bottom: 70px; */
+  margin-left: 100px;
+  background-color: rgb(212, 209, 209);
+  color: rgb(255, 255, 255);
+  font-family: 華康細圓體;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 32px;
+}
+
+.intro-text a:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+/* <!--------------真實旅拍-------------> */
+
+.real_camera {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 100px 50px 100px 200px;
+  box-sizing: border-box;
+  background-color: #9bb9ad;
+}
+.real_camera h1 {
+  display: block;
+  color: rgb(70, 70, 70);
+  text-shadow: 2px 2px 5px gray;
+  width: 400px;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.real_camera p {
+  display: block;
+  width: 400px;
+  height: auto;
+  font-size: 24px;
+  font-family: 華康細圓體;
+}
+
+.real_camera iframe {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+/* <!-----------footer---------------> */
+
+footer {
+  width: 1200px;
+  height: 60px;
+  background-color: #ebebeb;
+  font-family: 華康細圓體;
+  font-size: 6px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .p1 {
+  margin-left: 150px;
+  margin-right: 400px;
+}
+
+footer .p2 {
+  margin-right: 50px;
+}
